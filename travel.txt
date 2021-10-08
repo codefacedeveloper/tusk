@@ -1,0 +1,9 @@
+package com.gokul;
+
+public interface car {
+      void company(String company_name);
+      void model(String model);
+      void releaseYear(int year_of_release);
+      
+      
+}

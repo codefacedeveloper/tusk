@@ -1,0 +1,43 @@
+package com.gokul;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
+import java.util.Scanner;
+
+
+
+class call {  
+	   public static void main(String args[]) {
+		   
+		Scanner sc=new Scanner(System.in);
+		int y=sc.nextInt();
+		
+		try {
+			if(y==0) {
+				System.out.println(5/y);
+			}
+			else {
+				System.out.println("exception has not occured, to see exception enter 0");
+				System.out.println(5/y);
+			}
+			 y=sc.nextInt();
+			 System.out.println(5/y);
+			 y=sc.nextInt();
+			 System.out.println(5/y);
+			
+		} catch (ArithmeticException e1) {
+			// TODO Auto-generated catch block
+			System.out.println(e1.getMessage());
+		} 
+		finally {
+			System.out.println("array of the bounds");
+		}
+		
+		
+		}
+		
+	   }
+	
